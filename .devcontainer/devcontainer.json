@@ -2,6 +2,7 @@
   "name": "TYPO3 14 with DDEV",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/ddev/ddev/install-ddev:latest": {}
   },
   "postCreateCommand": "bash .devcontainer/setup.sh",
