@@ -1,0 +1,15 @@
+{
+  "name": "TYPO3 14 with DDEV",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/ddev/ddev/install-ddev:latest": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "TYPO3",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
